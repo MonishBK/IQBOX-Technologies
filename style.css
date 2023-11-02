@@ -1946,6 +1946,10 @@ input[type=submit]:focus {
     left: 0;
     z-index: 999;
   }
+  .fixed-header .mobile-menu-container .slicknav_btn .slicknav_icon span{
+    color:#000
+  }
+
   .fixed-header .mobile-menu-container .slicknav_nav {
     min-height: calc(100vh - 78px);
     height: 100%;
@@ -2126,7 +2130,7 @@ input[type=submit]:focus {
 
 .slicknav_btn {
   position: relative;
-  display: block;
+  display: flex;
   vertical-align: middle;
   float: right;
   padding: 0;
@@ -9102,6 +9106,74 @@ product checkout css
     background-size: contain;
   }
   
+/* mobile menu css */
+
+.dropdown-toggle::after{
+  display: none;
+}
+
+.dropdown-menu{
+  border: 1px solid grey !important;
+}
+
+.mobile-menu-container {
+  background-color: rgba(56, 56, 56, 0.9);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #000 !important;
+  padding: 1px 0px;
+}
+
+/* .mobile-menu-container {
+  position: absolute;
+  top: 2px;
+  right: 15px;
+} */
+
+/* .mobile-menu-container .slicknav_btn .slicknav_icon span{
+  background-color: red;
+  color: blue;
+} */
+
+/* .slicknav_icon {
+  background-color: #000;
+} */
+/* .slicknav_icon-bar{
+  background-color: #000;
+} */
+
+/* /* .slicknav_btn .slicknav_icon span{
+  background-color: black !important ;
+} */
+
+.slicknav_menu .slicknav_menutxt .slicknav_icon .slicknav_icon-bar{
+  /* position: relative; */
+
+}
+
+.slicknav_menu a .slicknav_icon{
+  /* flex-direction: column; */
+}
+
+/* .slicknav_btn .slicknav_collapsed {
+  display: flex;
+  justify-content: end;
+} */
+
+.slicknav_btn .slicknav_collapsed .slicknav_open {
+  outline: none;
+  display: flex;
+  justify-content: end;
+}
+
+.mobile-menu-container{
+  /* background-color: greenyellow; */
+  /* text-align: right; */
+}
+
+.slicknav_menutxt{
+  /* color: black !important; */
+} 
+
   /* aboutpage */
   .about_left_image_conatiner{
     width: 100vw;
@@ -9153,4 +9225,17 @@ height: 100%;
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+
+.site-header{
+  color: #000;
+  /* background-color: #000; */
+}
+/* .slicknav_menu */
+.mobile-menu-container  .slicknav_menu  a span{
+  /* background-color: #000; */
+}
+.mobile-menu-container  .slicknav_btn a{
+  color: #000;
 }
